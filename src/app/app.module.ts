@@ -7,7 +7,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CartService } from './cart.service';
 import { HeroesComponent } from './heroes/heroes.component';
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule } from '@angular/forms';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component'; // <-- NgModel lives here
 
 
 
@@ -25,6 +26,7 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
   declarations: [
     AppComponent,
     HeroesComponent,
+    HeroDetailComponent,
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
