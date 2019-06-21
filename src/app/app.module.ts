@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { CartService } from './cart.service';
 import { HeroesComponent } from './heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component'; // <-- NgModel lives here
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { HeroService } from './hero.service'; // <-- NgModel lives here
 
 
 
@@ -29,7 +30,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component'; // <-
     HeroDetailComponent,
   ],
   bootstrap: [ AppComponent ],
-  providers: [CartService]
+  providers: [CartService, HeroService]
 })
 export class AppModule { }
 
