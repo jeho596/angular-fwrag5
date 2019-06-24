@@ -9,7 +9,9 @@ import { CartService } from './cart.service';
 import { HeroesComponent } from './heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { HeroService } from './hero.service'; // <-- NgModel lives here
+import { HeroService } from './hero.service';
+import { MessagesComponent } from './messages/messages.component';
+import { MessageService } from './message.service'; // <-- NgModel lives here
 
 
 
@@ -28,9 +30,10 @@ import { HeroService } from './hero.service'; // <-- NgModel lives here
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
+    MessagesComponent,
   ],
   bootstrap: [ AppComponent ],
-  providers: [CartService, HeroService]
+  providers: [CartService, HeroService, MessageService]
 })
 export class AppModule { }
 
