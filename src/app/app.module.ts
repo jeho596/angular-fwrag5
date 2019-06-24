@@ -13,18 +13,14 @@ import { HeroService } from './hero.service';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service'; // <-- NgModel lives here
 
-
+import { AppRoutingModule }     from './app-routing.module';
 
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot([
-
-    ])
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
@@ -33,7 +29,7 @@ import { MessageService } from './message.service'; // <-- NgModel lives here
     MessagesComponent,
   ],
   bootstrap: [ AppComponent ],
-  providers: [CartService, HeroService, MessageService]
+  providers: [ HeroService, MessageService]
 })
 export class AppModule { }
 
