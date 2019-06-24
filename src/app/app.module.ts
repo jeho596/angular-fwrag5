@@ -14,6 +14,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service'; // <-- NgModel lives here
 
 import { AppRoutingModule }     from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { AppRoutingModule }     from './app-routing.module';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
+    DashboardComponent,
   ],
   bootstrap: [ AppComponent ],
   providers: [ HeroService, MessageService]
